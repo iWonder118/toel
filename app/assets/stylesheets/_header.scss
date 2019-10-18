@@ -3,6 +3,7 @@
   width: 100%;
   background-color: $color-skyblue;
   position: fixed;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
 
   &__bar{
     @include justify-spbetween;
