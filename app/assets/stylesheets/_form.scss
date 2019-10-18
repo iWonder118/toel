@@ -1,11 +1,7 @@
 .content__editer{
   height: 100vh;
   width: 100vw;
-  background: image-url('wallpaper.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  overflow: hidden;
+  @include back-image;
   padding-top: 75px;
 
   .content__editer__form{
@@ -18,7 +14,7 @@
       width: 100%;
       height: 30rem;
       box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.7);
-      background: hsl(60, 80%, 90%) -webkit-gradient(
+      background: $color-textyellow -webkit-gradient(
         linear,
         left top, left bottom,
         from(rgba(0, 0, 0, 0)),
@@ -41,10 +37,8 @@
       margin-top: 10px;
       font-size: 20px;
       display: block;
-      color: aliceblue;
-      background-color: rgba(92, 176, 245, 0.850);
-      border: 3px solid aliceblue;
-      border-radius: 5px;
+      background-color: $color-skyblue;
+      @include btn-layout;
       font-weight: bold;
       box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.7);
     }

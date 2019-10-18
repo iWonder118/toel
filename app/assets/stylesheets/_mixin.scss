@@ -1,0 +1,23 @@
+@mixin back-image{
+  background: image-url('wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@mixin justify-spbetween{
+  justify-content: space-between;
+  display: flex;
+}
+
+@mixin item-center{
+  align-items: center;
+  display: flex; 
+}
+
+@mixin btn-layout {
+  color: $color-white;
+  border: 3px solid $color-white;
+  border-radius: 5px;
+}
