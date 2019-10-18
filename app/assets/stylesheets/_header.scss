@@ -1,5 +1,5 @@
 .header{
-  height: 75px;
+  height: $hei-center;
   width: 100%;
   background-color: $color-skyblue;
   position: fixed;
@@ -10,10 +10,10 @@
 
     &__title{
       a{
-        padding: 5px 10px;
+        padding: $sp-5px-10px;
         margin-left: 20px;
         font-size: 25px;
-        line-height: 75px;
+        line-height: $hei-center;
         @include btn-layout;
         font-weight: bold;
       }
@@ -36,7 +36,7 @@
             margin:0 5px;
             text-align: right;
             a{
-              padding: 5px 10px;
+              padding: $sp-5px-10px;
               margin-right: 10px;
               font-size: 16px;
               @include btn-layout;
