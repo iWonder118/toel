@@ -1,0 +1,14 @@
+.content
+  - if user_signed_in? && current_user.id == content.user_id
+    %ul.content__info
+      %li.content__info__delete-btn
+        = link_to "/contents/#{content.id}", {method: :delete} do
+          %i.material-icons brightness_1
+      %li.content__info__edit-btn
+        = link_to "/contents/#{content.id}/edit" do
+          %i.material-icons rate_review
+  .content__text
+    %p.content__text__main
+      = simple_format(content.text)
+    %p.content__text__user
+      = "written by #{content.user.name}"

@@ -1,0 +1,61 @@
+.header{
+  height: 75px;
+  width: 100%;
+  background-color: rgba(92, 176, 245, 0.850);
+  position: fixed;
+
+  &__bar{
+    justify-content: space-between;
+    display: flex;
+    color: aliceblue;
+
+    &__title{
+      a{
+        padding: 5px 10px;
+        margin-left: 20px;
+        font-size: 25px;
+        line-height: 75px;
+        color: aliceblue;
+        border: 3px solid aliceblue;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    }
+    &__info{
+      display: flex;
+
+      &__user{
+        align-items: center;
+        display: flex; 
+        font-size: 20px;
+        font-weight: 500;
+          span{
+            margin-right: 20px;
+          }
+        &__management{
+          list-style: none;
+          display: flex;
+          
+          li{
+            margin:0 5px;
+            text-align: right;
+            a{
+              padding: 5px 10px;
+              margin-right: 10px;
+              font-size: 16px;
+              color: aliceblue;
+              border: 3px solid aliceblue;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+a{
+  text-decoration: none;
+  border-bottom: none;
+  
+}

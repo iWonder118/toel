@@ -1,0 +1,76 @@
+.contents{
+  height: calc(100% - 75px);
+  width: 100vw;
+  background: image-url('wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 75px;
+}
+
+.content{
+  background: #fdfdc0;
+  padding: 1em 2em;
+  width: 40%;
+  margin: 30px auto;
+  box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.7);
+
+  &__info{
+    justify-content: space-between;
+    display: flex;
+
+    &__edit-btn{
+      display: flex;
+    
+      i{
+        font-size: 25px;
+        color: rgb(38, 143, 38);
+      }
+    }
+
+    &__delete-btn{
+      display: flex;
+    
+      i{ 
+        font-size: 25px;
+        color: rgb(255, 78, 78);
+      }
+    }
+  }
+
+  &__text{
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 50%,
+        #fdfdc0 50%,
+        #fdfdc0 50%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 97%,
+        #999 97%,
+        #999 100%
+      );
+      background-size:
+        8px 100%,
+        100% 2em;
+      line-height:2;
+
+    p{
+      margin-bottom:2em;
+    }
+    &__title{
+      text-align: center;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    &__user{
+        text-align: right;
+        font-size: 15px;
+    }
+  }
+}

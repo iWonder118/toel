@@ -1,0 +1,10 @@
+= render "layouts/header"
+.content__editer
+  .content
+    .content__text
+      %p.content__text__title
+        = "《投稿する》"
+  .content__editer__form
+    = form_with(url: '/contents') do |f|
+      %textarea{cols: "30", name: "text", placeholder: "ここに入力", rows: "10"}
+      %input{type: "submit", value: "SENT"}/

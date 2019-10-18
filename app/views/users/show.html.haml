@@ -1,0 +1,13 @@
+= render "layouts/header"
+.contents
+  .content
+    .content__text
+      %p.content__text__title
+        = "《#{current_user.name}さんの投稿》"
+  - @contents.each do |content|
+    = render "contents/content", content: content
+= paginate(@contents)
+-if user_signed_in?
+  .content-new 
+    = link_to "/contents/new" do
+      %i.material-icons fiber_new

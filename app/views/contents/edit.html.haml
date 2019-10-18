@@ -1,0 +1,11 @@
+= render "layouts/header"
+.content__editer
+  .content
+    .content__text
+      %p.content__text__title
+        = "《編集する》"
+  .content__editer__form
+    = form_with(url: "/contents/#{@content.id}", method: :patch) do
+      %textarea{cols: "30", name: "text", placeholder: "text", rows: "10"}
+        = @content.text
+      %input{type: "submit", value: "SENT"}/

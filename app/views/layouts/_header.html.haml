@@ -1,0 +1,22 @@
+%header.header
+  .header__bar
+    .header__bar__title
+      = link_to 'TOEL-Memo','/'
+    .header__bar__info
+      - if user_signed_in?
+        .header__bar__info__user
+          %span
+            = "ユーザー名: #{current_user.name}"
+          %ul.header__bar__info__user__management
+            %li.header__bar__info__user__management--mypage
+              = link_to "マイページ", "/users/#{current_user.id}" 
+            %li.header__bar__info__user__management--logout
+              = link_to "ログアウト", destroy_user_session_path, method: :delete
+      - else
+        .header__bar__info__user
+          %ul.header__bar__info__user__management
+            %li.header__bar__info__user__management--login
+              = link_to "ログイン", new_user_session_path
+            %li.header__bar__info__user__management--signup
+              = link_to "新規登録", new_user_registration_path
+

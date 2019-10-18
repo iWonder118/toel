@@ -1,0 +1,13 @@
+= render "layouts/header"
+.contents
+  .content
+    .content__text
+      %p.content__text__title
+        = "《今日のオススメの学習方略や新たに得た知識を共有しよう！》"
+  - @contents.each do |content|
+    = render "content", content: content
+= paginate(@contents)
+-if user_signed_in?
+  .content-new 
+    = link_to "/contents/new" do
+      %i.material-icons fiber_new

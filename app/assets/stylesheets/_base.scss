@@ -1,0 +1,19 @@
+.pagination{
+  text-align: center;
+  background-color: rgba(92, 176, 245, 0.850);
+
+  span{
+    padding: 0 5px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+.content-new{
+  position: fixed;
+  right: 70px;
+  bottom: 60px;
+  i{
+    font-size: 120px;
+    color: #fdfdc0;
+  }
+}
