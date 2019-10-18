@@ -1,7 +1,7 @@
 .contents{
-  height: calc(100% - 75px);
+  height: calc(100% - $hei-center);
   width: 100vw;
-  padding-top: 75px;
+  padding-top: $hei-center;
   @include back-image;
 }
 
